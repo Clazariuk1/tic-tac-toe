@@ -22,18 +22,25 @@
   <section class="game__screen">
     <div class="display__board" id="display">Welcome to the game! Click the Reset Button to start a fresh round! </div>
     <div class="game__board" id="game-board">
-      <div class="game__btn" id=square-0></div>
-      <div class="game__btn" id="square-1"></div>
-      <div class="game__btn" id="square-2"></div>
-      <div class="game__btn" id="square-3"></div>
-      <div class="game__btn" id="square-4"></div>
-      <div class="game__btn" id="square-5"></div>
-      <div class="game__btn" id="square-6"></div>
-      <div class="game__btn" id="square-7"></div>
-      <div class="game__btn" id="square-8"></div>
+      <div data-index="0" class="game__btn square" id=square-0></div>
+      <div data-index="1" class="game__btn square" id="square-1"></div>
+      <div data-index="2" class="game__btn square" id="square-2"></div>
+      <div data-index="3" class="game__btn square" id="square-3"></div>
+      <div data-index="4" class="game__btn square" id="square-4"></div>
+      <div data-index="5" class="game__btn square" id="square-5"></div>
+      <div data-index="6" class="game__btn square" id="square-6"></div>
+      <div data-index="7" class="game__btn square" id="square-7"></div>
+      <div data-index="8" class="game__btn square" id="square-8"></div>
     </div>
     <footer id="footer">
-      <!-- <div class="current__player__turn">Player Turn: X</div> -->
+      <div class="win__counter">Games Played: <div id="game-tally"></div>
+        <div id="X-bar">
+          Player X Wins: <div id="X-wins"></div>
+        </div>
+        <div id="O-bar">
+          Player O Wins: <div id="O-wins"></div>
+        </div>
+      </div>
       <button class="replay__btn" id="replay">Replay??</button>
     </footer>
   </section>

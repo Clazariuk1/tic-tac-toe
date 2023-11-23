@@ -71,13 +71,13 @@ body {
   box-shadow: 1px 3px 4px whitesmoke;
 }
 
-#game-btn:hover {
+.game__btn:hover {
   transform: scale(1.5);
   transition: .5s;
   cursor: grab;
 }
 
-#game-btn:active {
+.game__btn:active {
   transform: scale(.75);
   transition: .1s;
 }
@@ -88,22 +88,19 @@ body {
   padding: 1rem;
   margin: 1rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   box-shadow: 1px 5px 9px whitesmoke;
   width: 50%;
 }
 
-/* .current__player__turn {
-  border: solid 1px blue;
-  font-family: 'Play', sans-serif;
-  background-color: lightgray;
-  color: rgb(25, 77, 23);
-  padding: 1rem;
-  box-shadow: 1px 2px 4px whitesmoke;
-} */
-
+/* #footerlast-child {
+  margin-left: auto;
+}
+ */
 .replay__btn {
+  margin-left: auto;
+  color: black;
   background-color: greenyellow;
   font-family: 'Play', sans-serif;
   padding: 1rem;
@@ -118,4 +115,14 @@ body {
   transform: scale(.75);
   transition: .1s;
   cursor: pointer;
+}
+
+.win__counter {
+  color: black;
+  background-color: greenyellow;
+  font-family: 'Play', sans-serif;
+  padding: 1rem;
+  box-shadow: 1px 1px 2px whitesmoke;
+  display: flex;
+  flex-direction: column;
 }
